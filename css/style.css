@@ -185,6 +185,8 @@ hr{
     background-color: bisque;
     border-left: 1rem solid var(--orange);
     color: #8111b1;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .container .left nav .left-navlist .left-navlinks:last-child{
@@ -199,14 +201,10 @@ hr{
     align-items: center;
     width: 80%;
     font-size: 1.8rem;
-    color: black;
+    color: var(--orange);
     
 }
-.container .left nav .left-navlist .left-navlinks a:hover{
-    color: #8111b1;
-    width: auto;
-    overflow: hidden;
-}
+
 /* .container .left nav .left-navlist .left-navlinks a:active{
     background-color: aquamarine;
     color: #ff8c27;
@@ -231,7 +229,9 @@ hr{
 
 
 /* center main content */
-
+.red{
+    color: red!important;
+}
 .main-center{
     width: 100%;
     /* background-color: var(--white); */
@@ -244,8 +244,9 @@ hr{
 }
 .main-center main{
     width:100%;
-    height: 100vh;
+    height:100%;
     background-color: var(--white);
+    overflow-y: scroll;
 }
  header{
     width: 100%;
