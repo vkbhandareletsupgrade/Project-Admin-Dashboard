@@ -151,7 +151,7 @@
             </header>
 
             <main>
-                <canvas id="canvas" width="1000" height="600" style="border: 2px solid black;"></canvas>
+                <canvas id="canvas" width="1000" height="500" style="border: 2px solid black;"></canvas>
             </main>
         </section>
 
@@ -204,24 +204,24 @@
         context.font = "20px ariel";
         context.fillText('X',45,30);
 
-        context.lineTo(50,550); //to draw a straight line we set x to 50 same as previous so we can add a straight line only on y axis
+        context.lineTo(50,500); //to draw a straight line we set x to 50 same as previous so we can add a straight line only on y axis
 
-        context.fillText('Y',25,550);
+        context.fillText('Y',25,500);
         
-        context.lineTo(950,550);
-        context.fillText('Y',960,555);
+        context.lineTo(950,500);
+        context.fillText('Y',960,505);
         context.lineWidth = 5;
         context.stroke();
 
        context.beginPath();
        let x_axis = 150;
-       context.moveTo(50,550);
+       context.moveTo(50,500);
        context.strokeStyle = "orange";
        context.fillStyle = "hotpink";
        for(let i=0;i<crypto.length;i++){
            
             let find_percentage = (crypto[i].value/30000)*100;
-            let find_y_axis = (find_percentage/100)*600;
+            let find_y_axis = (find_percentage/100)*500;
             
             context.lineTo(x_axis,550-find_y_axis);
             x_axis+=120;
