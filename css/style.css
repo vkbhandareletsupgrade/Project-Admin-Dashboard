@@ -176,7 +176,7 @@ hr{
     align-items: center;
     width: 100%;
     gap:5px;
-    padding: 1rem 6rem;
+    padding: 1rem 4rem;
     transition: all .3s ease-in-out;
     position: relative;
     /* background-color: #ff8c27; */
@@ -187,6 +187,7 @@ hr{
     color: #8111b1;
     width: 90%;
     margin: 0 auto;
+    /* padding: 0; */
 }
 
 .container .left nav .left-navlist .left-navlinks:last-child{
